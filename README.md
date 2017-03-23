@@ -4,7 +4,7 @@ This is damn simple library, aim to reduce the boiler plate code to create the v
 
 Currently it supports the DynamoDB document client and S3 client.
 
-##Usage
+## Usage
 Include below dependency in your pom.xml.
 ```
  <dependencies>
@@ -16,17 +16,17 @@ Include below dependency in your pom.xml.
     </dependencies>
 ```
 
-###Creating DynamoDB document client in your application
+### Creating DynamoDB document client in your application
 ```
 DynamoDB dynamoDB = DynamoDBClient.getDocClient(profileName,region);
 ```
 
-###Creating S3 client in your application
+### Creating S3 client in your application
 ```
 AmazonS3 amazonS3 = S3Client.get(profileName,region);
 ```
 
-##Limitation
+## Limitation
 Currently it supports only the **ProfileCredentialsProvider** method of creating the AWS client, which is one of the recommended way of creating the AWS clients.
 Read what is [ProfileCredentialsProvider and how to set it up](https://aws.amazon.com/blogs/developer/secure-local-development-with-the-profilecredentialsprovider/).
 
